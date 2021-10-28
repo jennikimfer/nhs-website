@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Signature Pad demo</title>
+  <meta name="description" content="NHS Character Reference">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <link rel="stylesheet" href="./Signature Pad demo_files/signature-pad.css">
+
+  <!--[if IE]>
+    <link rel="stylesheet" type="text/css" href="css/ie9.css">
+  <![endif]-->
+
+  <style>
+    h1 {text-align: center;}
+    h2 {text-align: center;}
+    h3 {text-align: center;}
+    p  {text-align: center;}
+  </style>
+  
+
+<body onselectstart="return false">
+
+  <div id="signature-pad" class="signature-pad">
+    <h1>NHS Character Reference</h1>
+    <div class="signature-pad--form">
+    <form id="frm1" action="/action_page.php" >
+      
+  <h3>Student</h3>
+	<label for="fname">First name</label>
+    <input type="text" id="fname" name="fname" ><br>
+    
+  <label for="lname">Last name</label>
+     <input type="text" id="lname" name="lname" ><br><br>
+    
+  <h3>Teacher</h3>
+     <label for="tfname">First Name</label>
+    <input type="text" id="tfname" name="tfname" ><br>
+   
+	<label for="tfname">Last name</label>
+    <input type="text" id="tlname" name="tlname" ><br><br>
+
+	</form>
+	</div>
+
+  <div class="signature-pad--body">
+    <canvas width="664" height="373" style="touch-action: none;"></canvas>
+  </div>
+
+  <div class="signature-pad--footer">
+    <div class="description">Sign above</div>
+      <div class="signature-pad--actions">
+        <div>
+          <button type="button" class="button clear" data-action="clear">Clear</button>
+          <!--<button type="button" class="button save-jpg" data-action="save-jpg">Save</button>-->
+          <button id="google-submit">Submit</button>
+        </div>
+        <div id="snackbar"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="./Signature Pad demo_files/signature_pad.umd.js"></script>
+  <script src="./Signature Pad demo_files/app.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./Signature Pad demo_files/google_submit.js"></script>
+
+
+</body></html>
